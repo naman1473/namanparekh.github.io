@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="personal icon" href="./images/NP icon.png" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME PAGE</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="skills.html">SKILLS</a></li>
+        </ul>
+      </nav>
+      <br />
+    </div>
+    <div class="contactmeform">
+      <h2 class="text-uppercase">Contact Me</h2>
+      <br />
+      <p class="lead">Send me a message and let's connect!</p>
+      <br />
+      <form
+        action="mailto:naman2881@gmail.com"
+        class="fform-class"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="form-details">
+          <label class="label-name">Your Name</label>
+          <div class="label-input-group">
+            <input type="text" name="Your Name: " class="input-form" required />
+          </div>
+        </div>
+        <div class="form-details">
+          <label for="Email" class="label-name">Your email address</label>
+          <div class="label-input-group">
+            <input
+              type="email"
+              name="Your Email: "
+              class="input-form"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-details">
+          <label for="Message" class="label-name">Your message</label>
+          <div class="label-input-group">
+            <textarea
+              name="Message"
+              class="input-form"
+              rows="10"
+              cols="30"
+              required
+            ></textarea>
+            <br />
+            <div class="submitbutton">
+              <input type="submit" name="" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
