@@ -14,6 +14,8 @@ body {
     width: 40%;
     min-width: 570px;
     position: absolute;
+    margin: auto;
+    margin-top: 70px;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
@@ -59,6 +61,7 @@ h2{
     background-color: #8AAAE5;
 }
 .skills:not(:last-child){
+
     margin-bottom: 30px;
 }
 
@@ -72,6 +75,14 @@ h2{
 }
 
 #python-bar{
+    animation: python-fill 3s forwards;
+}
+@keyframes python-fill{
+    100%{
+        width: 80%;
+    }
+}
+#html-bar{
     animation: html-fill 3s forwards;
 }
 @keyframes html-fill{
@@ -79,20 +90,28 @@ h2{
         width: 85%;
     }
 }
-#html-bar{
+#css-bar{
     animation: css-fill 3s forwards;
 }
 @keyframes css-fill{
     100%{
-        width: 85%;
+        width: 50%;
     }
 }
-#css-bar{
-    animation: python-fill 3s forwards;
+#csharp-bar{
+    animation: csharp-fill 3s forwards;
 }
-@keyframes python-fill{
+@keyframes csharp-fill{
     100%{
-        width: 50%;
+        width: 70%;
+    }
+}
+#sql-bar{
+    animation: sql-fill 3s forwards;
+}
+@keyframes sql-fill{
+    100%{
+        width: 70%;
     }
 }
 #javascript-bar{
